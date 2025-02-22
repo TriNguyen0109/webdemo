@@ -10,14 +10,17 @@ class App extends React.Component {
     Name:"Minh Tri",
     Age: 17
   }
-  // function so() {
-  //   return 5;
-  // }
+  handleClick(event) {
+    console.log("ban da click button")
+    // console.log(event.target)
+  }
+  click(event) {
+    console.log(event)
+  }
   render() {
     return (
       <div>Đây là một component được thực hiện bằng class
         <MyComponent></MyComponent>
-        {this.state.Age}   {this.state.Name}
       </div>
       );
     }
