@@ -10,6 +10,11 @@ class MyComponent extends React.Component {
         ]
     }
 
+    componentDidMount() {
+        console.log("DidMount đã được gọi")
+        setTimeout(() => {document.title ="Tên mới"},3000)
+    }
+
     handleAddNewUser = (infor) =>{
         // console.log(infor)
         let newUser=this.state.user
@@ -19,7 +24,9 @@ class MyComponent extends React.Component {
         })
         // this.state.user.unshift(infor)
     }
+
     render() {
+        console.log("render đã được gọi")
         return (
             <div>
                 <AddUserInfor handleAddNewUser={this.handleAddNewUser}/>

@@ -22,7 +22,7 @@ class AddUserInfor extends React.Component {
             name: event.target.value
         })
     }
-
+    
     handleOnchangeAge(event) {
         this.setState({
             age: event.target.value
